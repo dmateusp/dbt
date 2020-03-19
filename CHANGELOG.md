@@ -1,5 +1,8 @@
 ## dbt next (release TBD)
 
+### Features
+- Users can now use jinja as arguments to tests. Test arguments are rendered in the native context and injected into the test execution context directly. ([#2149](https://github.com/fishtown-analytics/dbt/issues/2149), [#2220](https://github.com/fishtown-analytics/dbt/pull/2220))
+
 ### Fixes
 - When a jinja value is undefined, give a helpful error instead of failing with cryptic "cannot pickle ParserMacroCapture" errors ([#2110](https://github.com/fishtown-analytics/dbt/issues/2110), [#2184](https://github.com/fishtown-analytics/dbt/pull/2184))
 

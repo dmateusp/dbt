@@ -27,6 +27,8 @@ models:
             - not_null
         - name: email
           description: "The user's email address"
+          tests:
+            - unique
         - name: favorite_color
           description: "The user's favorite color"
           tests:
